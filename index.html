@@ -1,52 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Web Serial API - Reading Test</title>
-    </head>
-    <body>
-        <h3>はじめてのWeb Serial API｜読込テスト</h3>
-        <button onclick="startSerial()">接続</button>
-        <button onclick="stopSerial()">切断</button>
-        <script>
-            let stopFlag = false;
-            async function startSerial() {
-                try {
-                    console.log("INFO: 接続が確立しました");
-                    stopFlag = false;
-                    const port = await navigator.serial.requestPort();
-                    await port.open({ baudRate: 9600 });
-                    while (port.readable) {
-                        const reader = port.readable.getReader();
-                        try {
-                            while (!stopFlag) {
-                                const { value, done } = await reader.read();
-                                if (done) {
-                                    console.log("INFO: 読込モード終了");
-                                    break;
-                                }
-                                //👇生データはバイナリなので、ユニコード文字へデコード
-                                const inputValue = new TextDecoder().decode(value);
-                                console.log(inputValue);
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Serial API Console</title>
+    <script>
+        let port;
+
+        async function onConnectButtonClick() {
+            try {
+                port = await navigator.serial.requestPort();
+                await port.open({ baudRate: 115200 });
+
+                while (port.readable) {
+                    const reader = port.readable.getReader();
+
+                    try {
+                        while (true) {
+                            const { value, done } = await reader.read();
+                            if (done) {
+                                addSerial("Canceled\n");
+                                break;
                             }
-                        } catch (error) {
-                            console.log("ERROR: 読み出し失敗");
-                            console.log(error);
-                        } finally {
-                            reader.releaseLock();
-                            await port.close();
-                            console.log("INFO: 接続を切断しました");
+                            const inputValue = new TextDecoder().decode(value);
+                            addSerial(inputValue);
                         }
+                    } catch (error) {
+                        addSerial("Error: Read" + error + "\n");
+                    } finally {
+                        reader.releaseLock();
                     }
-                } catch (error) {
-                    console.log("ERRORR: ポートが開けません");
-                    console.log(error);
                 }
+            } catch (error) {
+                addSerial("Error: Open" + error + "\n");
             }
-            function stopSerial() {
-                stopFlag = true;
-            }
-        </script>
-    </body>
+        }
+
+        function addSerial(msg) {
+            var textarea = document.getElementById('outputArea');
+            textarea.value += msg;
+            textarea.scrollTop = textarea.scrollHeight;
+        }
+
+        async function sendSerial() {
+            var text = document.getElementById('sendInput').value;
+            document.getElementById('sendInput').value = "";
+
+            const encoder = new TextEncoder();
+            const writer = port.writable.getWriter();
+            await writer.write(encoder.encode(text + "\n"));
+            writer.releaseLock();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Web Serial API Console</h1>
+    <button onclick="onConnectButtonClick()">Connect</button> 115200 Only
+    <br />
+
+    <input type="text" id="sendInput" />
+    <input type="button" value="Send" onclick="sendSerial();" />
+    <br />
+    <textarea cols="80" rows="6" id="outputArea" readonly></textarea>
+
+</body>
+
 </html>
