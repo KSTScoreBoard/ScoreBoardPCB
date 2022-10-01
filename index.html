@@ -16,7 +16,7 @@
                     console.log("INFO: 接続が確立しました");
                     stopFlag = false;
                     const port = await navigator.serial.requestPort();
-                    await port.open({ baudRate: 115200 });
+                    await port.open({ baudRate: 9600 });
                     while (port.readable) {
                         const reader = port.readable.getReader();
                         try {
