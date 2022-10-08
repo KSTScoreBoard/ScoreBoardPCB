@@ -478,6 +478,14 @@
     [
       "8856cda4-4d7b-419a-aec7-38ea82cdbca1",
       ""
+    ],
+    [
+      "ddd07300-1a41-43e5-a937-20bbff480aed",
+      "LedAnodeDrivers"
+    ],
+    [
+      "3a5d50f3-7006-4c79-be61-f48c3562ebc1",
+      "LedCathodeDrivers"
     ]
   ],
   "text_variables": {}
