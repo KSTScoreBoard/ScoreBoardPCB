@@ -381,15 +381,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "power1.0",
-        "nets": [
-          "/cathodeA",
-          "/cathodeB",
-          "/cathodeC",
-          "/cathodeD",
-          "/cathodeE",
-          "/cathodeF",
-          "/cathodeG"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 1.0,
@@ -407,11 +399,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "power5.0",
-        "nets": [
-          "/anodeHun",
-          "/anodeOne",
-          "/anodeTen"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 2.0,

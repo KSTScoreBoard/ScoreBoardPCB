@@ -2179,7 +2179,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 12c02f12-8f6c-430f-a689-4b5fa9794c63)
   )
-  (label "PlusOne" (at 100.33 153.67 0)
+  (label "PlusOne" (at 100.33 143.51 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 180db668-ef72-4549-aada-e94800c52dc4)
   )
@@ -2327,7 +2327,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid af0ec66b-f06e-4b13-8a84-bd867a603571)
   )
-  (label "PlusHun" (at 100.33 143.51 0)
+  (label "PlusHun" (at 100.33 151.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b0875cdc-2ac2-4761-917a-a445a5d7229a)
   )
@@ -2367,7 +2367,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid cb8cae07-1cf9-4f36-9e1a-0fe313759940)
   )
-  (label "MinusOne" (at 100.33 151.13 0)
+  (label "MinusOne" (at 100.33 148.59 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cc0b3dec-0a03-4548-9349-42d4b256889f)
   )
@@ -2411,7 +2411,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid e7b75533-fd43-4f87-9220-dd363f4566d0)
   )
-  (label "MinusHun" (at 100.33 148.59 0)
+  (label "MinusHun" (at 100.33 153.67 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid ec8ea3ac-7fb4-40b0-9b10-f4a37b4c126d)
   )
@@ -3860,38 +3860,38 @@
     (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/694b0c1a-4c62-4710-b828-088a7cf1ef98"
       (reference "U301") (unit 1) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
     )
-    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/49a7e39f-dbf8-48ad-ae14-87294e9b17be"
+    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/2dbc7b94-97c3-475d-b979-6be9e5194e4f"
       (reference "U301") (unit 2) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
     )
-    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/2dbc7b94-97c3-475d-b979-6be9e5194e4f"
+    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/b6b5693a-0427-49e1-a6b6-6fba7bfad11b"
+      (reference "U301") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+    )
+    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/49a7e39f-dbf8-48ad-ae14-87294e9b17be"
       (reference "U302") (unit 1) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
     )
     (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/7816d18a-27e2-4b53-9283-eced36a893de"
+      (reference "U302") (unit 2) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+    )
+    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/ab7893e5-bafb-49ed-93d6-a608ebabd528"
+      (reference "U302") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+    )
+    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/6c5994bc-12b4-490c-8a8c-bdca46d1fe70"
       (reference "U303") (unit 1) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
     )
     (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/6ca03af0-ae49-486a-a25e-abe2ae9a6dc2"
-      (reference "U304") (unit 1) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
-    )
-    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/6c5994bc-12b4-490c-8a8c-bdca46d1fe70"
-      (reference "U304") (unit 2) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
-    )
-    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/b66260a0-15cc-49fa-b1a1-ae2d70ac1cf7"
-      (reference "U305") (unit 1) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
-    )
-    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/65a07ce1-182c-4a56-80dd-670515932cc1"
-      (reference "U305") (unit 2) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
-    )
-    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/b6b5693a-0427-49e1-a6b6-6fba7bfad11b"
-      (reference "U306") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
-    )
-    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/ab7893e5-bafb-49ed-93d6-a608ebabd528"
-      (reference "U307") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+      (reference "U303") (unit 2) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
     )
     (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/cf418c9d-86e6-4fb6-9327-4965fd456c23"
-      (reference "U308") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+      (reference "U303") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+    )
+    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/65a07ce1-182c-4a56-80dd-670515932cc1"
+      (reference "U304") (unit 1) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+    )
+    (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/b66260a0-15cc-49fa-b1a1-ae2d70ac1cf7"
+      (reference "U304") (unit 2) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
     )
     (path "/3a5d50f3-7006-4c79-be61-f48c3562ebc1/1bff8d84-01e6-4a04-ba5e-e7976e1c2ef2"
-      (reference "U309") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
+      (reference "U304") (unit 3) (value "LM358") (footprint "Package_SO:TSSOP-8_3x3mm_P0.65mm")
     )
   )
 )
