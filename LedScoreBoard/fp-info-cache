@@ -1,11 +1,4 @@
-20335514248160325
-2831BS-RIGHT-ANGLE
-DIPS762W45P254L2253H610Q12N
-2831BS-RIGHT-ANGLE
-Display
-0
-12
-12
+20337244218383557
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -57917,6 +57910,20 @@ ESP8266 WiFi microcontroller
 0
 16
 16
+MonoWireless
+MonoWireless_TWELITE-SMD_SMA-Connector
+https://www.mono-wireless.com/jp/products/TWE-LITE/MW-PDS-TWELITE-JP.pdf
+TWELITE TWE-L-WX MW-R-WX SMA
+0
+39
+30
+MonoWireless
+MonoWireless_TWELITE_SMD_w_RevF_Ant
+https://www.mono-wireless.com/jp/products/TWE-LITE/MW-PDS-TWELITE-JP.pdf
+TWELITE TWE-L-WX MW-R-WX PCB Antenna
+0
+35
+32
 MountingEquipment
 DINRailAdapter_3xM3_PhoenixContact_1201578
 https://www.phoenixcontact.com/online/portal/us?uri=pxc-oc-itemdetail:pid=1201578&library=usen&tab=1

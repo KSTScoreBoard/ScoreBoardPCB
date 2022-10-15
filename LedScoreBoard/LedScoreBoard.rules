@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 8445)
+    (start_pass_no 7774)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.5)
+      (against_preferred_direction_trace_costs 2.0)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.7)
+      (against_preferred_direction_trace_costs 2.0)
     )
   )
   (rule
@@ -50,6 +50,9 @@
     "Via[0-1]_800:400_um-power1.0" "Via[0-1]_800:400_um" power1.0
   )
   (via 
+    "Via[0-1]_800:400_um-power2.3" "Via[0-1]_800:400_um" power2.3
+  )
+  (via 
     "Via[0-1]_800:400_um-power5.0" "Via[0-1]_800:400_um" power5.0
   )
   (via_rule
@@ -62,22 +65,25 @@
     power1.0 "Via[0-1]_800:400_um-power1.0"
   )
   (via_rule
+    power2.3 "Via[0-1]_800:400_um-power2.3"
+  )
+  (via_rule
     power5.0 "Via[0-1]_800:400_um-power5.0"
   )
   (class default
-    VDD GND +3.3V "Net-(C2-Pad2)" +12V "Net-(DS1-Pad1)" "Net-(DS1-Pad2)" "unconnected-(DS1-Pad3)"
-    "Net-(DS1-Pad4)" "Net-(DS1-Pad5)" "unconnected-(DS1-Pad6)" "Net-(DS1-Pad7)" "Net-(DS1-Pad8)" "Net-(DS1-Pad9)" "Net-(DS1-Pad10)" "Net-(DS1-Pad11)"
-    "Net-(DS1-Pad12)" /MCLR /PGD /PGC "unconnected-(J2-Pad6)" /placeHun /placeTen /placeOne
-    /enable "Net-(Q4-Pad3)" "Net-(Q5-Pad3)" "Net-(Q6-Pad3)" "Net-(Q7-Pad3)" "Net-(Q8-Pad1)" "Net-(Q10-Pad1)" "Net-(Q10-Pad3)"
-    "Net-(Q12-Pad1)" "Net-(Q12-Pad3)" "Net-(Q17-Pad1)" "Net-(Q17-Pad3)" "Net-(Q18-Pad1)" "Net-(Q18-Pad3)" "Net-(Q19-Pad1)" "Net-(Q19-Pad3)"
-    "Net-(Q20-Pad1)" "Net-(Q20-Pad3)" /segmentA /Vref /segmentB /segmentD "Net-(Q25-Pad1)" "Net-(Q25-Pad3)"
-    "Net-(Q26-Pad1)" "Net-(Q26-Pad3)" "Net-(Q27-Pad1)" "Net-(Q27-Pad3)" /segmentE /segmentF /segmentG /segmentC
-    "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)" "Net-(R19-Pad1)" "Net-(R20-Pad1)" "Net-(R21-Pad1)" "Net-(R22-Pad1)"
-    "Net-(R27-Pad1)" "Net-(R28-Pad1)" "Net-(R29-Pad1)" "Net-(R30-Pad1)" "Net-(R31-Pad1)" "Net-(R32-Pad1)" /plusHun /minusHun
-    /plusTen /minusTen /plusOne /minusOne /SCL /SDA "unconnected-(U1-Pad16)" "unconnected-(U1-Pad17)"
-    "unconnected-(U1-Pad18)" "Net-(Q22-Pad2)" "Net-(Q30-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(Q8-Pad3)" "Net-(Q14-Pad1)"
-    "Net-(Q15-Pad1)" "Net-(Q16-Pad1)" "Net-(Q21-Pad2)" "Net-(Q23-Pad2)" "Net-(Q24-Pad2)" "Net-(Q28-Pad2)" "Net-(Q29-Pad2)" "Net-(Q32-Pad3)"
-    "Net-(Q33-Pad3)" "Net-(Q34-Pad3)" "Net-(Q35-Pad3)" "Net-(Q36-Pad3)" "Net-(Q37-Pad3)" "Net-(Q31-Pad3)"
+    GND +3.3V "Net-(C201-Pad2)" +12V /CsensA /CsensB /CsensC /CsensD
+    /CsensE /CsensF /CsensG "unconnected-(J101-Pad1)" /RST /MCLR /PGD /PGC
+    "unconnected-(J101-Pad7)" VDD "unconnected-(J107-Pad6)" /PlaceOne "Net-(Q201-Pad3)" "Net-(Q202-Pad1)" "Net-(Q202-Pad3)" "Net-(Q204-Pad1)"
+    /PlaceTen "Net-(Q205-Pad3)" "Net-(Q206-Pad1)" "Net-(Q206-Pad3)" "Net-(Q208-Pad1)" /PlaceHun "Net-(Q209-Pad3)" "Net-(Q210-Pad1)"
+    "Net-(Q210-Pad3)" "Net-(Q212-Pad1)" /SegmentA "Net-(Q301-Pad2)" "Net-(Q302-Pad1)" "Net-(Q302-Pad3)" /SegmentB "Net-(Q303-Pad2)"
+    /Vref "Net-(Q304-Pad1)" "Net-(Q304-Pad3)" /SegmentC "Net-(Q305-Pad2)" "Net-(Q306-Pad1)" "Net-(Q306-Pad3)" /SegmentD
+    "Net-(Q307-Pad2)" "Net-(Q308-Pad1)" "Net-(Q308-Pad3)" /SegmentE "Net-(Q309-Pad2)" "Net-(Q310-Pad1)" "Net-(Q310-Pad3)" /SegmentF
+    "Net-(Q311-Pad2)" "Net-(Q312-Pad1)" "Net-(Q312-Pad3)" /SegmentG "Net-(Q313-Pad2)" "Net-(Q314-Pad1)" "Net-(Q314-Pad3)" "Net-(R301-Pad1)"
+    "Net-(R304-Pad1)" "Net-(R307-Pad1)" "Net-(R310-Pad1)" "Net-(R313-Pad1)" "Net-(R316-Pad1)" "Net-(R319-Pad1)" /PlusHun /MinusHun
+    /PlusTen /SCL /SDA /MinusTen /PlusOne /MinusOne "unconnected-(U101-Pad25)" "unconnected-(U101-Pad26)"
+    "unconnected-(U102-Pad29)" "unconnected-(U102-Pad27)" "unconnected-(U102-Pad26)" "unconnected-(U102-Pad24)" "unconnected-(U102-Pad23)" "unconnected-(U102-Pad22)" "unconnected-(U102-Pad19)" "unconnected-(U102-Pad18)"
+    /RX /PRG /TX "unconnected-(U102-Pad1)" "unconnected-(U102-Pad3)" "unconnected-(U102-Pad4)" "unconnected-(U102-Pad6)" "unconnected-(U102-Pad25)"
+    "unconnected-(U102-Pad7)"
     (clearance_class default)
     (via_rule default)
     (rule
@@ -98,7 +104,7 @@
     )
   )
   (class power1.0
-    /cathodeA /cathodeB /cathodeC /cathodeD /cathodeE /cathodeF /cathodeG
+    /LedCathodeDrivers/CathodeA /LedCathodeDrivers/CathodeB /LedCathodeDrivers/CathodeC /LedCathodeDrivers/CathodeD /LedCathodeDrivers/CathodeE /LedCathodeDrivers/CathodeF /LedCathodeDrivers/CathodeG
     (clearance_class power1.0)
     (via_rule power1.0)
     (rule
@@ -108,12 +114,23 @@
       (use_layer F.Cu B.Cu)
     )
   )
+  (class power2.3
+    "Net-(D202-Pad2)" "Net-(D203-Pad2)" "Net-(D204-Pad2)"
+    (clearance_class power2.3)
+    (via_rule power2.3)
+    (rule
+      (width 2300.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
   (class power5.0
-    /anodeOne /anodeTen /anodeHun
+    /LedAnodeDrivers/AnodeOne /LedAnodeDrivers/AnodeTen /LedAnodeDrivers/AnodeHun
     (clearance_class power5.0)
     (via_rule power5.0)
     (rule
-      (width 2000.0)
+      (width 5000.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
