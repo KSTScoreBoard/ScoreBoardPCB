@@ -1386,7 +1386,7 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 09f04e0f-bd3f-4a35-a923-62704bb2251d)
   )
-  (hierarchical_label "Vref" (shape input) (at 31.75 43.18 180)
+  (hierarchical_label "VrefIn" (shape input) (at 31.75 43.18 180)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 13e84d5a-c392-440d-8fb3-f4cced32e933)
   )
