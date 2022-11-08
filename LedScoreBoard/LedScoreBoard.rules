@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 7774)
+    (start_pass_no 6214)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -72,18 +72,18 @@
   )
   (class default
     GND +3.3V "Net-(C201-Pad2)" +12V /CsensA /CsensB /CsensC /CsensD
-    /CsensE /CsensF /CsensG "unconnected-(J101-Pad1)" /RST /MCLR /PGD /PGC
-    "unconnected-(J101-Pad7)" VDD "unconnected-(J107-Pad6)" /PlaceOne "Net-(Q201-Pad3)" "Net-(Q202-Pad1)" "Net-(Q202-Pad3)" "Net-(Q204-Pad1)"
-    /PlaceTen "Net-(Q205-Pad3)" "Net-(Q206-Pad1)" "Net-(Q206-Pad3)" "Net-(Q208-Pad1)" /PlaceHun "Net-(Q209-Pad3)" "Net-(Q210-Pad1)"
-    "Net-(Q210-Pad3)" "Net-(Q212-Pad1)" /SegmentA "Net-(Q301-Pad2)" "Net-(Q302-Pad1)" "Net-(Q302-Pad3)" /SegmentB "Net-(Q303-Pad2)"
-    /Vref "Net-(Q304-Pad1)" "Net-(Q304-Pad3)" /SegmentC "Net-(Q305-Pad2)" "Net-(Q306-Pad1)" "Net-(Q306-Pad3)" /SegmentD
-    "Net-(Q307-Pad2)" "Net-(Q308-Pad1)" "Net-(Q308-Pad3)" /SegmentE "Net-(Q309-Pad2)" "Net-(Q310-Pad1)" "Net-(Q310-Pad3)" /SegmentF
-    "Net-(Q311-Pad2)" "Net-(Q312-Pad1)" "Net-(Q312-Pad3)" /SegmentG "Net-(Q313-Pad2)" "Net-(Q314-Pad1)" "Net-(Q314-Pad3)" "Net-(R301-Pad1)"
-    "Net-(R304-Pad1)" "Net-(R307-Pad1)" "Net-(R310-Pad1)" "Net-(R313-Pad1)" "Net-(R316-Pad1)" "Net-(R319-Pad1)" /PlusHun /MinusHun
-    /PlusTen /SCL /SDA /MinusTen /PlusOne /MinusOne "unconnected-(U101-Pad25)" "unconnected-(U101-Pad26)"
-    "unconnected-(U102-Pad29)" "unconnected-(U102-Pad27)" "unconnected-(U102-Pad26)" "unconnected-(U102-Pad24)" "unconnected-(U102-Pad23)" "unconnected-(U102-Pad22)" "unconnected-(U102-Pad19)" "unconnected-(U102-Pad18)"
-    /RX /PRG /TX "unconnected-(U102-Pad1)" "unconnected-(U102-Pad3)" "unconnected-(U102-Pad4)" "unconnected-(U102-Pad6)" "unconnected-(U102-Pad25)"
-    "unconnected-(U102-Pad7)"
+    /CsensE /CsensF /CsensG /MCLR /PGD /PGC VDD /PlaceOne
+    "Net-(Q201-Pad3)" "Net-(Q202-Pad1)" "Net-(Q202-Pad3)" "Net-(Q204-Pad1)" /PlaceTen "Net-(Q205-Pad3)" "Net-(Q206-Pad1)" "Net-(Q206-Pad3)"
+    "Net-(Q208-Pad1)" /PlaceHun "Net-(Q209-Pad3)" "Net-(Q210-Pad1)" "Net-(Q210-Pad3)" "Net-(Q212-Pad1)" /SegmentA "Net-(Q301-Pad2)"
+    "Net-(Q302-Pad1)" "Net-(Q302-Pad3)" /SegmentB "Net-(Q303-Pad2)" /PicVref "Net-(Q304-Pad1)" "Net-(Q304-Pad3)" /SegmentC
+    "Net-(Q305-Pad2)" "Net-(Q306-Pad1)" "Net-(Q306-Pad3)" /SegmentD "Net-(Q307-Pad2)" "Net-(Q308-Pad1)" "Net-(Q308-Pad3)" /SegmentE
+    "Net-(Q309-Pad2)" "Net-(Q310-Pad1)" "Net-(Q310-Pad3)" /SegmentF "Net-(Q311-Pad2)" "Net-(Q312-Pad1)" "Net-(Q312-Pad3)" /SegmentG
+    "Net-(Q313-Pad2)" "Net-(Q314-Pad1)" "Net-(Q314-Pad3)" "Net-(R310-Pad1)" /PlusHun /MinusHun /PlusTen /SCL
+    /SDA /MinusTen /PlusOne /MinusOne "Net-(U101-Pad25)" "unconnected-(U101-Pad26)" "unconnected-(U102-Pad29)" "unconnected-(U102-Pad27)"
+    "unconnected-(U102-Pad26)" "unconnected-(U102-Pad24)" "unconnected-(U102-Pad23)" "unconnected-(U102-Pad22)" "unconnected-(U102-Pad19)" "unconnected-(U102-Pad18)" /RX /PRG
+    /TX "unconnected-(U102-Pad1)" "unconnected-(U102-Pad3)" "unconnected-(U102-Pad4)" "unconnected-(U102-Pad6)" "unconnected-(U102-Pad25)" "unconnected-(U102-Pad7)" /LedCathodeDrivers/Vref
+    /RESET "unconnected-(J102-Pad1)" "Net-(J102-Pad3)" "unconnected-(J102-Pad7)" "unconnected-(J103-Pad1)" "Net-(R302-Pad1)" "Net-(R306-Pad1)" "Net-(R314-Pad1)"
+    "Net-(R318-Pad1)" "Net-(R322-Pad1)" "Net-(R326-Pad1)" "Net-(J101-Pad6)"
     (clearance_class default)
     (via_rule default)
     (rule
